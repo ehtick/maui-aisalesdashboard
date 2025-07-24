@@ -17,7 +17,7 @@
 
     <chart:SfCircularChart Margin="{OnPlatform Default=16, Android='12,16', iOS='12,16', MacCatalyst='16,16,16,-40'}" HeightRequest="{OnPlatform Android=342, iOS=342}" VerticalOptions="{OnPlatform Android=Start, iOS=Start}">
         <chart:SfCircularChart.Title>
-            <Label Text="Top Products" FontSize="16" Style="{StaticResource LabelStyle}" LineHeight="1.5" CharacterSpacing="0.15" HeightRequest="24"/>
+            <Label Text="Top Products" FontSize="16" Style="{StaticResource LabelStyle}" LineHeight="1.5" CharacterSpacing="0.15" HeightRequest="{OnPlatform Default=24, MacCatalyst=40, iOS=28}"/>
         </chart:SfCircularChart.Title>
 
         <chart:SfCircularChart.Legend>
@@ -46,7 +46,7 @@
         </chart:SfCircularChart.Legend>
 
         <chart:DoughnutSeries ItemsSource="{Binding Products}" ShowDataLabels="True"
-                              XBindingPath="Name" YBindingPath="BasePrice" PaletteBrushes="{Binding PaletteBrushes1}" InnerRadius="0.5" Radius="0.7">
+                              XBindingPath="Name" YBindingPath="BasePrice" PaletteBrushes="{Binding PaletteBrushes1}" InnerRadius="0.5" Radius="{OnPlatform Default=0.7,iOS=0.6}">
             <chart:DoughnutSeries.LabelTemplate>
                 <DataTemplate>
                     <Label Text="{Binding Item, Converter={StaticResource ValueConverter}, ConverterParameter='BasePrice'}" x:DataType="chart:ChartDataLabel"

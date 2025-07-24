@@ -17,9 +17,9 @@
 
     <VerticalStackLayout x:DataType="local:SalesTrendsViewModel">
 
-        <Label Text="Top Regions" FontSize="16" Margin="{OnPlatform Default='16,16,16,10',MacCatalyst='16,16,16,0', Android='12,12,0,0', iOS='12,12,0,0'}" Style="{StaticResource labelStyle}" LineHeight="1.5" CharacterSpacing="0.15" HeightRequest="24"/>
+        <Label Text="Top Regions" FontSize="16" Margin="{OnPlatform Default='16,16,16,10',MacCatalyst='16,16,16,0', Android='12,12,0,0', iOS='12,12,0,0'}" Style="{StaticResource labelStyle}" LineHeight="1.5" CharacterSpacing="0.15" HeightRequest="{OnPlatform Default=24, MacCatalyst=40, iOS=30}"/>
 
-        <map:SfMaps WidthRequest="{OnPlatform MacCatalyst=500, Default=600, Android=312, iOS=312}" HeightRequest="{OnPlatform MacCatalyst=500, Default=295, Android=154, iOS=154}" Margin="{OnPlatform Android='12,14,12,12', iOS='12,14,12,12', MacCatalyst='0,-30,0,0'}">
+        <map:SfMaps WidthRequest="{OnPlatform MacCatalyst=500, Default=600, Android=312, iOS=312}" HeightRequest="{OnPlatform MacCatalyst=500, Default=295, Android=154, iOS=154}" Margin="{OnPlatform Android='12,14,12,12', iOS='12,14,12,12', MacCatalyst='0,0,0,0'}">
             <map:SfMaps.Layer>
                 <map:MapShapeLayer ShapesSource="https://cdn.syncfusion.com/maps/map-data/world-map.json"
                      Markers="{Binding MapMarkerCollection}"
