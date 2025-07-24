@@ -10,7 +10,7 @@
         <Label Text="Profit Margin %" FontSize="16" FontFamily="RobotoMedium"
                Margin="{OnPlatform Default='16,16,0,16', Android='12,12,0,0', iOS='12,12,0,0'}"
                TextColor="{AppThemeBinding Light={StaticResource SalesDemoContentLabelTextColor}, Dark={StaticResource SalesDemoContentLabelTextColorDark}}"
-               LineHeight="1.5" CharacterSpacing="0.15" HeightRequest="24"/>
+               LineHeight="1.5" CharacterSpacing="0.15" HeightRequest="{OnPlatform Default=24, MacCatalyst=40, iOS=28}"/>
         
         <chart:SfCartesianChart Margin="{OnPlatform Default='16,0,16,16', Android='20,14,16,12', iOS='20,14,16,12'}">
             <chart:SfCartesianChart.XAxes>
