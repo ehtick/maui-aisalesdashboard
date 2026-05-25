@@ -4,6 +4,49 @@ This repository contains samples demonstrating a .NET MAUI AI Sales Insights Das
 
 The MAUI Sales Insights Dashboard is a comprehensive application that provides actionable insights into sales metrics. It leverages Syncfusion’s advanced UI components to present data in an interactive and visually appealing way.
 
+## Features Integrated
+
+- Revenue trend & tracking
+- Product Sales reports
+- Order Details
+- Sales Prediction reports
+
+## Project Patterns and Features
+
+- XAML UI
+- Converters
+- Custom controls
+- Data binding
+- Behaviors
+- MVVM
+- Styles
+
+## Syncfusion Controls
+
+This project uses the following Syncfusion controls based on the information in your clipboard:
+
+- SfAIAssistView
+- SfBusyIndicator
+- SfButton
+- SfCartesianChart
+- SfCircularChart
+- SfComboBox
+- SfDataGrid
+- SfMaps
+- SfNavigationDrawer
+- SfRadialGauge
+- SfRating
+
+## Screens
+
+**Desktop View**
+
+<img src="Images\home_desktoppage.png" Width="600" />
+
+**Mobile View** 
+
+<img src="Images\home_mobilepage.png" Width="190" />  <img src="Images\sales_datapage.png" Width="190" />  <img src="Images\sales_predictionpage.png" Width="190" />
+
 ## Supported platforms
 
 .NET Multi-platform App UI (.NET MAUI) apps can be written for the following platforms:
