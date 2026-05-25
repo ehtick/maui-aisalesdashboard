@@ -30,7 +30,7 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-            <local:CustomBorder Grid.Row="1" Margin="{OnPlatform iOS='0,-45,0,0'}">
+            <local:CustomBorder Grid.Row="1">
                 <local:CustomBorder.Content>
                     <local:RevenueTrendChart/>
                 </local:CustomBorder.Content>
